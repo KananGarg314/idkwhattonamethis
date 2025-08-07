@@ -7,16 +7,24 @@ body {
 
 .headerBar{
     display:flex;
+    justify-self: center;
     align-self: center;
-    align-items: center;
     flex-direction: column;
-    width: fit-content;
+    width: 700px;
     height: 200px;
+    background-color: #000;
+    color:#fff;
+    border: solid;
+    margin-top:10px;
+    border-radius: 25px;
     
 }
 
 .headerBar li{
     list-style:none;
+    align-items: center;
+    margin: 15px;
+
 }
 
 nav {
