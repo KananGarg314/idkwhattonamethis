@@ -1,6 +1,5 @@
 let timer;
 let seconds = 0;
-let isPaused = false;
 let duration = 0; // The total duration of the timer in seconds
 
 const timerForm = document.getElementById('timer-form');
@@ -9,21 +8,26 @@ const timerDisplay = document.getElementById('timer-display');
 const alertSound = document.getElementById('alert-sound');
 
 // Function to start the timer
-timerForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    if (timer) {
-        clearInterval(timer);
-    }
-    
+function startTimer() {
     // Get the duration from the input and convert to seconds
-    const minutes = parseInt(minutesInput.value);
+    const minutes = parseInt(minutesInput.value, 10); // Use radix 10 for safety
     if (!isNaN(minutes) && minutes > 0) {
         duration = minutes * 60;
         seconds = 0; // Reset seconds for a new timer
-        isPaused = false;
         updateDisplay();
+        
+        // Clear any existing timer before starting a new one
+        if (timer) {
+            clearInterval(timer);
+        }
         timer = setInterval(runTimer, 1000);
     }
+}
+
+// Event listener for the form submission
+timerForm.addEventListener('submit', (e) => {
+    e.preventDefault(); // Prevent the page from reloading
+    startTimer();
 });
 
 // The core timer function that runs every second
@@ -32,9 +36,11 @@ function runTimer() {
         seconds++;
         updateDisplay();
     } else {
+        // Timer has finished
         clearInterval(timer);
         timer = null;
         alertSound.play();
+        // You can add more actions here, like a visual alert
     }
 }
 
@@ -52,19 +58,17 @@ function updateDisplay() {
 
 // ⏸️ Function to pause the timer
 function pauseTimer() {
-    if (timer && !isPaused) {
+    if (timer) {
         clearInterval(timer);
-        timer = null;
-        isPaused = true;
+        timer = null; // Set to null to indicate it's paused
     }
 }
 
 // ▶️ Function to resume the timer
 function resumeTimer() {
-    if (!timer && isPaused) {
-        // Resume the timer by restarting the interval
+    // Check if a timer is not running but has been paused
+    if (!timer && seconds < duration) {
         timer = setInterval(runTimer, 1000);
-        isPaused = false;
     }
 }
 
@@ -72,7 +76,6 @@ function resumeTimer() {
 function stopTimer() {
     clearInterval(timer);
     timer = null;
-    isPaused = false;
     seconds = 0;
     duration = 0;
     timerDisplay.textContent = "00:00";
