@@ -1,6 +1,6 @@
 body {
    font-family: 'Arial', sans-serif;
-   background: #f7f9fc;
+   background: #d5d5d5;
    margin: 0;
    padding: 0;
 }
@@ -12,8 +12,8 @@ body {
     flex-direction: column;
     width: 700px;
     height: 200px;
-    background-color: #000;
-    color:#fff;
+    background-color: #F8D974;
+    color:#51354A;
     border: solid;
     margin-top:10px;
     border-radius: 25px;
@@ -28,7 +28,7 @@ body {
 }
 
 nav {
-   background: #232f3e;
+   background: #0F4C81;
    color: white;
    display: flex;
    justify-content: space-between;
@@ -52,7 +52,7 @@ nav .links a {
 
 .left, .right {
    width: 40%;
-   background: #fff;
+   background: #F4F7FF;
    padding: 1rem;
    border-radius: 8px;
    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
