@@ -5,6 +5,19 @@ body {
    padding: 0;
 }
 
+.headerBar{
+    display:flex;
+    align-self: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    height: 200px;
+    
+}
+
+.headerBar li{
+    list-style:none;
+}
 
 nav {
    background: #232f3e;
@@ -47,3 +60,4 @@ nav .links a {
 .timer-controls button {
    margin-right: 1rem;
 }
+
