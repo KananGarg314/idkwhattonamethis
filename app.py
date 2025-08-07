@@ -25,7 +25,7 @@ tips = [
    ]
 
 
-@app.route('/random_quote')
+@app.route('/')
 def index():
    global tasks
   
