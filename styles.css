@@ -1,0 +1,48 @@
+body {
+   font-family: 'Arial', sans-serif;
+   background: #f7f9fc;
+   margin: 0;
+   padding: 0;
+}
+
+
+nav {
+   background: #232f3e;
+   color: white;
+   display: flex;
+   justify-content: space-between;
+   padding: 1rem 2rem;
+}
+
+
+nav .links a {
+   color: white;
+   margin-left: 1rem;
+   text-decoration: none;
+}
+
+
+.container {
+   display: flex;
+   justify-content: space-around;
+   padding: 2rem;
+}
+
+
+.left, .right {
+   width: 40%;
+   background: #fff;
+   padding: 1rem;
+   border-radius: 8px;
+   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+
+#timer-display {
+   font-size: 2rem;
+   margin: 1rem 0;
+}
+
+
+.timer-controls button {
+   margin-right: 1rem;
