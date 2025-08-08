@@ -176,3 +176,10 @@ nav .links {
    margin-right: 1rem;
 }
 
+
+div .todo{
+    background-color:var(--peach);
+    font-family:"Nunito";
+    font-size:100px;
+
+}
