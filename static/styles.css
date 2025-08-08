@@ -8,8 +8,8 @@
 }
 
 body {
-   font-family: 'Arial', sans-serif;
-   background: #d5d5d5;
+   font-family: '"Poiret One"';
+   background: var(--grey) ;
    margin: 0;
    padding: 0;
 }
@@ -17,14 +17,14 @@ body {
 .headerBar{
     display:flex;
     justify-self: center;
-    align-self: center;
+    justify-content: center;
     flex-direction: column;
     width: 700px;
     height: 200px;
-    background-color: #F8D974;
+    background-color: var(--peach);
     color:#51354A;
-    border: solid;
-    margin-top:10px;
+    border: none;
+    margin-top:40px;
     border-radius: 25px;
     
 }
@@ -33,25 +33,42 @@ body {
     list-style:none;
     align-items: center;
     margin: 15px;
+    font-size: 20px;
 
 }
+
 
 nav {
    background: var(--forest);
    color: white;
    display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
    justify-content: space-between;
    padding: 1rem 2rem;
 }
 
+nav h1{
+    font-family: "Nunito";
+    font-size:35px;
+}
 
+nav .links {
+   color: white;
+   margin-left: 1rem;
+   
+}
 
 /* Container for the dropdown menu */
 .dropdown {
   position: relative;
-    flex-direction: row;
+  flex-direction: row;
   display: inline-block; /* Aligns the dropdown horizontally */
-  
+    flex-direction: row;
+
+  flex-wrap: nowrap;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 /* Style the button that opens the dropdown */
@@ -64,7 +81,7 @@ nav {
   border-radius: 15px;
   cursor: pointer;
   margin-top:10px;
-    margin-inline: 30px;
+
 
 }
 
@@ -104,19 +121,19 @@ nav {
   background-color: #ccc;
 }
 
-nav .links a, nav .links div {
-   color: white;
-   margin-left: 1rem;
-   text-decoration: none;
-   list-style: none;
 
-}
 
 .container {
    display: flex;
    justify-content: space-around;
    padding: 2rem;
+   margin-top:40px;
+   width:75vw;
+   justify-self: center;
+   background-color: var(--sage);
+   border-radius:15px;
 }
+
 
 
 .left, .right {
