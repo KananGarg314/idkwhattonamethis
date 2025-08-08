@@ -64,7 +64,7 @@ nav {
   border-radius: 15px;
   cursor: pointer;
   margin-top:10px;
-    margin-inline: 15px;
+    margin-inline: 30px;
 
 }
 
@@ -73,6 +73,7 @@ nav {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
+  border-radius: 10px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1; /* Ensures the dropdown appears on top */
@@ -87,13 +88,15 @@ nav {
 }
 
 /* Change color on hover */
-.dropdown-content a:hover {
+.dropdown-content button :hover {
   background-color: #ddd;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+    margin-right:10px
+
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
