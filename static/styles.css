@@ -164,6 +164,11 @@ nav .links {
     padding:5px;
 }
 
+.left img{
+    margin:20px;
+    border-radius:10px;
+    width:400px;
+}
 .left button:hover{
     opacity: 70%;
     cursor:pointer;
@@ -207,6 +212,7 @@ footer{
     background-color: var(--forest);
     color:#fff;
     padding:20px;
+    margin-top:50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
