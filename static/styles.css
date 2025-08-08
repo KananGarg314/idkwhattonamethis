@@ -19,6 +19,7 @@ body {
     display:flex;
     justify-self: center;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     width: 700px;
     height: 200px;
@@ -194,4 +195,25 @@ nav .links {
 
 .todo h2{
     justify-self: center;
+}
+
+.todo input{
+    border-radius:20px;
+    border:none;
+    padding:10px;
+}
+
+footer{
+    background-color: var(--forest);
+    color:#fff;
+    padding:20px;
+    display: flex;
+    flex-direction: row;
+    gap:20rem;
+
+}
+
+footer li, footer a{
+    list-style: none;
+    color: #fff;
 }
