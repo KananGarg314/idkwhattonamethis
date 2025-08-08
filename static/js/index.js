@@ -1,3 +1,5 @@
+
+
 let timer;
 let seconds = 0;
 let duration = 0;

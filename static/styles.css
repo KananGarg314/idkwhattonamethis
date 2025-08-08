@@ -291,6 +291,11 @@ footer li, footer a{
     margin:10px;
 }
 
+footer a:hover{
+    opacity:70%;
+    transition: 0.3s;
+
+}
 footer h3:hover{
     text-decoration: underline;
     text-underline-offset: 5px;
