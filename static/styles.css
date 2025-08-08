@@ -131,7 +131,7 @@ nav .links {
    width:75vw;
    justify-self: center;
    background-color: var(--sage);
-   border-radius:15px;
+   border-radius:20px;
 }
 
 
@@ -140,11 +140,32 @@ nav .links {
    width: 40%;
    background: #F4F7FF;
    padding: 1rem;
-   border-radius: 8px;
+   border-radius: 10px;
    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.left{
+    font-family:"Nunito";
+    height: 50%;
+    
+}
+.left button{
+    background-color: var(--sage);
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    padding:10px;
 
+}
+.left input{
+    border-radius:10px;
+    padding:5px;
+}
+
+.left button:hover{
+    opacity: 70%;
+    cursor:pointer;
+}
 #timer-display {
    font-size: 2rem;
    margin: 1rem 0;

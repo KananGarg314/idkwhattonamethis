@@ -10,13 +10,19 @@ tasks = []
 
 
 quotes = [
-       "The future belongs to those who prepare for it today. - Malcolm X",
-       "An investment in knowledge pays the best interest. - Benjamin Franklin",
-       "Success is the sum of small efforts, repeated day in and day out. - Robert Collier",
-       "The expert in anything was once a beginner. - Helen Hayes",
-       "Dont wish it were easier, wish you were better. - Jim Rohn"
+       "The future belongs to those who prepare for it today.",
+       "An investment in knowledge pays the best interest.",
+       "Success is the sum of small efforts, repeated day in and day out. ",
+       "The expert in anything was once a beginner. ",
+       "Dont wish it were easier, wish you were better. "
        ]
 
+quotesSpeaker = {"Malcolm X",
+                 "Benjamin Franklin",
+                 "Robert Collier",
+                 "Helen Hayes",
+                 "Jim Rohn"
+}
 
 tips = [
        "LOCK IN BUDDY",

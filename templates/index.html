@@ -13,39 +13,16 @@
 </head>
 <body>
    <nav>
-       <h1>StudyFlow</h1>
-            <div class="links">
-                <div class="dropdown">
-                <button class="dropdown-toggle"><i class="fa-brands fa-linkedin"></i></button>
-]                <div class="dropdown-content"> 
-                    <a  href="https://www.linkedin.com/in/kanan-garg" target="_blank"> Kanan's LinkedIn</a>
-                    <a  href="https://www.linkedin.com/in/nathania-mckenzie" target="_blank"> Nathania's LinkedIn</a>
-                </div>
-
-                
-                <div class="dropdown">
-                    <button class="dropdown-toggle"><i class="fa-brands fa-github"></i></button>
-    ]                 <div class="dropdown-content"> 
-                        <a  href="https://github.com/KananGarg314" target="_blank"> Kanan's Github</a>
-                        <a  href="https://github.com/naarmc2" target="_blank"> Nathania's Github</a>
-                    </div>
-                </div>
-
-                <div>
-                    <button class="dropdown-toggle"><i class="fa-solid fa-envelope"></i></button>
-    ]                <div class="dropdown-content"> 
-                        <a  href="mailto:kanan.garg@csedge.org" target="_blank"> Kanan's Email</a>
-                        <a href="mailto:nathania.mckenzie@csedge.org" target="_blank"> Nathania's Email</a>
-                    </div>
-                </div>
-            </div>
+    
+       <h1><i class="fa-solid fa-seedling"></i>StudyFlow</h1>
+           
    </nav>
 
    <div class="headerBar">
         <ul>
-            <li> <i class="fa-solid fa-clock"></i>{{now}}   </li>
-            <li>  <i class="fa-solid fa-quote-left"></i>{{quote}}  <i class="fa-solid fa-quote-right"></i></li>
-            <li>  <i class="fa-brands fa-gratipay"></i>{{tip}}  </li>
+            <li> <i class="fa-solid fa-clock"></i>  &nbsp;{{now}}   </li>
+            <li>  <i class="fa-solid fa-quote-left"> &nbsp;</i>{{quote}}<i class="fa-solid fa-quote-right"></i> &nbsp;</li>
+            <li>  <i class="fa-brands fa-gratipay"></i>  &nbsp;{{tip}}  </li>
         </ul>
 
    </div>
@@ -73,7 +50,7 @@
            <!-- Embed Spotify directly -->
            <iframe style="border-radius:12px"
                 src="https://open.spotify.com/embed/playlist/3oxQgtzpQJpNYOwUehXAGT?"
-                width="100%" height="152"
+                width="100%" height="352"
                 frameborder="0"
                 allowtransparency="true"
                 allow="encrypted-media">
@@ -82,27 +59,43 @@
    </div>
 
 
-   <div class="todo">
-       <h2>To-Do List</h2>
-       <form method="POST">
-           <input type="text" name="task" placeholder="Add a task...">
-           <button type="submit" name="add-task">Add</button>
-       </form>
+  	<div class="todo">
+<h2>To-Do List</h2>
+<form method="POST">
+<input type="text" name="task" placeholder="Enter a new task">
+<button type="submit" name="add-task">Add Task</button>
+</form>
 
+<ul>
+<li>
+<form method="POST" style="display: inline;">
+<button type="submit" name="toggle-task" value="0" style="background:none; border:none; padding:0; margin-right: 8px;">
+<span class="material-symbols-outlined">check_box</span>
+</button>
+</form>
+<span style="text-decoration: line-through; color: gray;">hw</span>
+</li>
+</ul>
 
-       <ul>
-           {% for task in tasks %}
-           <li class="{{ 'done' if task.done else '' }}">
-               {{ task.task }}
-               {% if not task.done %}
-               <form method="POST" style="display:inline;">
-                   <button type="submit" name="complete-task" value="{{ loop.index0 }}">✔</button>
-               </form>
-               {% endif %}
-           </li>
-           {% endfor %}
-       </ul>
-   </div>
+<footer>
+<div class="footer-section">
+<h3>Contact Kanan</h3>
+<ul>
+<li><a href="https://github.com/KananGarg314" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+<li><a href="mailto:kanan.g.garg2@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+<li><a href="https://linkedin.com/in/kanan-garg" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+</ul>
+</div>
+
+<div class="footer-section">
+<h3>Contact Nathania</h3>
+<ul>
+<li><a href="https://github.com/naarmc2" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+<li><a href="mailto:mckenzienathania0@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+<li><a href="https://www.linkedin.com/in/nathania-mckenzie/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+</ul>
+</div>
+</footer>
 </body>
 
 </html>
