@@ -14,11 +14,6 @@ body {
    padding: 0;
 }
  
-
-  
-
-
-
 .headerBar{
     display:flex;
     justify-self: center;
@@ -50,33 +45,68 @@ nav {
 }
 
 
-nav .links a, nav .links li {
+
+/* Container for the dropdown menu */
+.dropdown {
+  position: relative;
+    flex-direction: row;
+  display: inline-block; /* Aligns the dropdown horizontally */
+  
+}
+
+/* Style the button that opens the dropdown */
+.dropdown-toggle {
+  background-color: var(--grey);
+  color: #333;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-top:10px;
+    margin-inline: 15px;
+
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1; /* Ensures the dropdown appears on top */
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; /* Makes each link take up its own line */
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropdown-toggle {
+  background-color: #ccc;
+}
+
+nav .links a, nav .links div {
    color: white;
    margin-left: 1rem;
    text-decoration: none;
    list-style: none;
 
-}
-
-.links{
-  display: inline-block;
-}
-
-.links,.link-hide{
-  display: inline-block;
-  color: #f6b44a;
-  padding: 12px 16px;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.link-hide{
-  display: block;
-}
-
-.link-hide:hover,.links:hover{
-  background-color: var(--forest);
-  color: black;
 }
 
 .container {
