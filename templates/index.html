@@ -61,21 +61,22 @@
 
   	<div class="todo">
         <h2>To-Do List</h2>
-        <form method="POST">
-            <input type="text" name="task" placeholder="Enter a new task">
-            <button type="submit" name="add-task">Add Task</button>
-        </form>
+        <form action="{{ url_for('add_task') }}" method="post">
+        <input type="text" name="task" placeholder="Add a new task..." required>
+        <button type="submit">Add Task</button>
+    </form>
 
-        <ul>
-            <li>
-            <form method="POST" style="display: inline;">
-                <button type="submit" name="toggle-task" value="0" style="background:none; border:none; padding:0; margin-right: 8px;">
-                <span class="material-symbols-outlined">check_box</span>
-                </button>
-            </form>
-            <span style="text-decoration: line-through; color: gray;">hw</span>
-            </li>
-        </ul>
+    <ul>
+        {% for task in tasks %}
+        <li class="{{ 'done' if task.done else '' }}">
+            {{ task.task }}
+            {% if not task.done %}
+            <a href="{{ url_for('complete_task', task_id=loop.index0) }}">✔</a>
+            {% endif %}
+            <a href="{{ url_for('delete_task', task_id=loop.index0) }}">✖</a>
+        </li>
+        {% endfor %}
+    </ul>
     </div>
 
 <footer>

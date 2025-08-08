@@ -4,6 +4,7 @@
     --forest: #1C352D;
     --sage: #A6B28B;
     --peach: #F5C9B0;
+    --deepPurple: #51354A;
     --grey: #F9F6F3;
 }
 
@@ -22,7 +23,7 @@ body {
     width: 700px;
     height: 200px;
     background-color: var(--peach);
-    color:#51354A;
+    color:var(--deepPurple);
     border: none;
     margin-top:40px;
     border-radius: 25px;
@@ -149,7 +150,7 @@ nav .links {
     height: 50%;
     
 }
-.left button{
+.left button, .todo button{
     background-color: var(--sage);
     color:#fff;
     border:none;
@@ -177,9 +178,20 @@ nav .links {
 }
 
 
-div .todo{
+.todo{
     background-color:var(--peach);
+    color: var(--deepPurple);
+    margin:24px;
     font-family:"Nunito";
-    font-size:100px;
+    justify-items: center;
+    justify-self: center;
+    border:none;
+    border-radius: 10px;
+    padding:15px;
+    width: 75vw;
 
+}
+
+.todo h2{
+    justify-self: center;
 }
