@@ -209,11 +209,20 @@ footer{
     padding:20px;
     display: flex;
     flex-direction: row;
-    gap:20rem;
+    justify-content: center;
+    gap:30rem;
 
 }
 
 footer li, footer a{
     list-style: none;
     color: #fff;
+    text-decoration: none;
+    margin:10px;
+}
+
+footer h3:hover{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    transition:0.3s;
 }
