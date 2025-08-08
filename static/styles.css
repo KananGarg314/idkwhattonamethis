@@ -159,9 +159,15 @@ nav .links {
     padding:10px;
 
 }
+
+ .todo button{
+    background-color: var(--forest);
+
+ }
 .left input{
     border-radius:10px;
     padding:5px;
+    
 }
 
 .left img{
@@ -183,18 +189,63 @@ nav .links {
    margin-right: 1rem;
 }
 
+/* To-Do List items */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.headerBar li {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+li.done {
+    text-decoration: line-through;
+    color: gray;
+}
+
+li form {
+    margin: 0;
+}
+
+li form button {
+    background: var(--forest);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+li form button:hover {
+    background: #0b2818;
+}
 .todo{
-    background-color:var(--peach);
+    background-color:#fff;
     color: var(--deepPurple);
     margin:24px;
     font-family:"Nunito";
     justify-items: center;
     justify-self: center;
     border:none;
+    box-shadow:2px 2px 2px 2px rgb(231, 231, 231);
     border-radius: 10px;
     padding:15px;
-    width: 75vw;
+    width: 40vw;
+    height:200px;
+
+
 
 }
 
@@ -203,9 +254,12 @@ nav .links {
 }
 
 .todo input{
-    border-radius:20px;
-    border:none;
+    border-radius:10px;
+    box-shadow:#ccc;
+    color:#ccc;
     padding:10px;
+     width:30vw;
+     margin-bottom: 20px;
 }
 
 footer{
