@@ -255,11 +255,21 @@ li form button:hover {
 
 .todo input{
     border-radius:10px;
-    box-shadow:#ccc;
-    color:#ccc;
+    border:solid;
+    border-color:#e9e6e6;
     padding:10px;
      width:30vw;
      margin-bottom: 20px;
+}
+
+.checkMark, .xMark{
+    background-color: var(--forest);
+    list-style:none;
+    text-decoration: none;
+    border-radius: 5px;
+    color:#fff;
+    padding:8px;
+    margin:5px;
 }
 
 footer{
