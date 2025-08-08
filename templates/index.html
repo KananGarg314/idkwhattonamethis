@@ -4,14 +4,17 @@
    <meta charset="UTF-8">
    <title>StudyFlow</title>
    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+   <link rel="preconnect" href="https://fonts.googleapis.com">             
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <script src="https://kit.fontawesome.com/191a1815e8.js" crossorigin="anonymous"></script>
    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
     
 </head>
 <body>
    <nav>
        <h1>StudyFlow</h1>
-       <div class="links">
-            <ul>
+            <ul class="links">
                 <li class="menu"> <i class="fa-brands fa-linkedin"></i></li>
                 <i class="fa-solid fa-arrow-down"></i>
                 <div class="menuContent"> 
@@ -19,21 +22,21 @@
                     <a class="link-hide" href="https://www.linkedin.com/in/nathania-mckenzie" target="_blank"> Nathania's LinkedIn</a>
                 </div>
 
-                <li class="menu"> target="_blank"><i class="fa-brands fa-github"></i></li>
+                <li class="menu"><i class="fa-brands fa-github"></i></li>
                 <i class="fa-solid fa-arrow-down"></i>
                  <div class="menuContent"> 
                     <a class="link-hide" href="https://github.com/KananGarg314" target="_blank"> Kanan's Github</a>
                     <a class="link-hide" href="https://github.com/naarmc2" target="_blank"> Nathania's Github</a>
                 </div>
 
-                <li class="menu"> <a class = "menu" href="mailto:kanan.garg@csedge.org">Email</a></li>
+                <li class="menu"><i class="fa-solid fa-envelope"></i> </li>
                 <i class="fa-solid fa-arrow-down"></i>
                 <div class="menuContent"> 
                     <a class="link-hide" href="mailto:kanan.garg@csedge.org" target="_blank"> Kanan's Email</a>
                     <a class="link-hide" href="mailto:nathania.mckenzie@csedge.org" target="_blank"> Nathania's Email</a>
                 </div>
             </ul>
-       </div>
+      
    </nav>
 
    <div class="headerBar">
