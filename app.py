@@ -19,7 +19,12 @@ quotes = [
 
 
 tips = [
-       "LOCK TF IN BUDDY"
+       "LOCK IN BUDDY",
+       "TAKE BREAKS",
+       "SET GOALS",
+       "PRIORITIZE TASKS",
+       "ELIMINATE DISTRACTIONS",
+       "YOU GOT THIS!"
    ]
 
 
